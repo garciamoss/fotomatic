@@ -15,12 +15,6 @@ html {
   top: 5.3125rem; /* To offset for fixed header. */
 }
 
-.button {
-  border-radius: 4px;
-  background-color: #4a4a4a;
-  color: white;
-}
-
 .image-container {
   overflow: hidden;
 }
@@ -46,7 +40,9 @@ header .content {
 }
 
 header .logo {
-  font-weight: 300;
+  font-family: "Rubik", sans-serif;
+  font-weight: lighter;
+  font-size: 1.25rem;
   flex: 1;
 }
 
@@ -75,10 +71,8 @@ header .mobile {
 }
 
 /* Sign Up Section */
-#sign-up-section {
+.banner{
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   height: 21.25rem;
   background-image: url("../images/banner-landingpage.jpg");
   background-repeat: no-repeat;
@@ -87,7 +81,7 @@ header .mobile {
   padding: 10.625rem 0;
 }
 
-#sign-up-cta {
+.cta {
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
@@ -95,7 +89,7 @@ header .mobile {
   margin-left: 6.25rem;
 }
 
-#sign-up-cta .content {
+.cta .content {
   width: 25.625rem;
   margin-top: 2rem;
   font-family: "Roboto", sans-serif;
@@ -105,51 +99,60 @@ header .mobile {
   text-align: center;
 }
 
-#sign-up-cta h1 {
+.cta h1 {
   font-size: 3.125rem;
 }
 
-#sign-up-cta h2 {
+.cta h2 {
   font-size: 2.25rem;
 }
 
-#sign-up-cta span strong {
+.cta span strong {
   font-weight: bold;
 }
 
-#sign-up-cta .cursive {
+.cta .cursive {
   font-family: "Damion", cursive;
 }
 
-#sign-up-cta .striking {
+.cta .striking {
   font-family: "Rubik", sans-serif;
   padding-bottom: .75rem;
 }
 
-#sign-up-cta .button {
+.cta .button {
   margin-top: 1.625rem;
   padding: 1.25rem 7.25rem;
+  border-radius: 4px;
+  background-color: #4a4a4a;
+  color: white;
 }
 
 /* Features Section */
-#features-section {
+.features {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 5%;
+  padding: 4rem 1.4375rem;
   background-color: #f3f3f3;
 }
 
 .feature {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
   padding: 2rem;
-  margin: 0px 1.25rem;
+  margin: 0 1.1875rem;
   background-color: white;
+  text-align: center;
 }
 
-.feature .image-container {
-  width: 90%;
-  height: 65%;
-  margin: 0 auto;
+.feature img {
+  width: auto;
+  height: 25.796875rem;
+}
+
+.feature .content {
+  padding: 2.5rem;
+  line-height: 1.2;
 }
 
 .feature h2 {
@@ -160,14 +163,13 @@ header .mobile {
 }
 
 .feature h3 {
-  font-size: 1rem;
-  line-height: 1.2;
   font-weight: 300;
   color: #4a4a4a;
 }
 
 /* Filters Section */
 #filters-section {
+  display: flex
   padding: 4rem 0;
   background-color: #4a4a4a;
 }
@@ -294,28 +296,28 @@ footer .copyright {
     padding-top: 1rem;
     margin: auto;
   }
-  #sign-up-section {
+  .banner {
     align-items: center;
     justify-content: center;
     height: 28rem;
   }
-  #sign-up-cta {
+  .cta {
     position: static;
     width: auto;
     height: auto;
     background-color: transparent;
     border: none;
   }
-  #sign-up-cta .content {
+  .cta .content {
     margin-top: 0;
   }
-  #sign-up-cta .email {
+  .cta .email {
     display: none;
   }
-  #sign-up-cta h1 {
+  .cta h1 {
     font-size: 3.125rem;
   }
-  #sign-up-cta h2 {
+ .cta h2 {
     font-size: 2.25rem;
   }
   #filters-section {
